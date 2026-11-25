@@ -1,6 +1,8 @@
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { mkdirSync, writeFileSync } from "node:fs";
 
-const ENTRY = "My fitness tracker congratulated me on 10,000 steps, then quietly admitted 9,800 of them were me pacing while the microwave beeped.";
+// One hilarious line, 200 characters or fewer, that lands entirely on its own.
+const line =
+  "My password manager just filed a restraining order against me after I tried 'password123' for the ninth time this month, and frankly the judge agrees with it.";
 
-mkdirSync('/output', { recursive: true });
-writeFileSync('/output/entry.txt', ENTRY);
+mkdirSync("/output", { recursive: true });
+writeFileSync("/output/entry.txt", line);
